@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+:root
+{
+    --cor-principal:#000000;
+    --cor-secundaria:#F6F6F6;
+    --cor-terciaria:#22D4FD;
+    --cor-quataria: #ff0000;
+    --cor-hover:#272727;
+    --cor-hover-2:#ffffff;
+    --cor-quinta:#82CD47;
+
+    --font-principal:'Chakra Petch', sans-serif;
+    
+}
+
+*
+{
+    margin:0;
+    padding:0;   /*Padding serve para espaçar a o conteudo das bordas de uma margem*/
+}
+
+body
+{
+    
+    background-color:var(--cor-principal);
+    color:var(--cor-secundaria);
+    box-sizing: border-box;
+    
+}
+.cabecalho
+{
+    padding:2% 0 0 15%;
+   
+}
+
+.cabecalho_inicial 
+{
+    display:flex;
+    gap:80px;
+}
+
+.cabecalho_home
+{
+    font-family:var(--font-principal);
+    font-size: 1.5rem;
+    font-weight: 600;   
+    text-decoration: none;
+    color: var(--cor-terciaria);
+
+}
+
+.cabecalho_sobre-mim
+{
+    font-family:var(--font-principal);
+    font-size:1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho_projetos
+{
+    font-family:var(--font-principal);
+    font-size:1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.front-destaque
+{
+    color: var(--cor-terciaria);
+    
+}
+.front-destaque-palavras
+{
+    color:var(--cor-terciaria);
+}
+.front-destaque-palavras-vermelho
+{
+    color:var(--cor-quataria);
+}
+.front-destaque-palavras-verde
+{
+     color:var(--cor-quinta);
+}
+.apresentacao
+{
+    padding: 5% 10%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 82px;
+    
+    
+   
+}
+
+.apresentacao__conteudo
+{
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px
+    
+}
+
+.apresentacao__conteudo__titulo
+{
+ 
+    text-align: initial;
+    font-size: 2.375rem;
+    font-family:var(--font-principal);
+    padding-block: 20px 25px;
+}
+
+.apresentacao__conteudo__texto
+{
+    
+    margin:20px;
+    border-radius: double;
+    font-size: 1.5rem;
+    font-family:var(--font-principal);
+    font-weight: 400;
+    padding:5% 10%;
+
+}
+
+.apresentacao-subtitulo
+{
+    font-family:var(--font-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+
+.apresentacao__redesocial
+{
+  display:flex ;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  gap:32px;
+    font-family:var(--font-principal);
+}
+
+.apresentacao__redesocial__social
+{
+    
+    
+    display:flex;
+    justify-content: center;
+    border: 1px solid var(--cor-terciaria);
+    gap:16px;
+    
+    text-align:center;
+    cursor:pointer;
+    text-transform:uppercase;
+    outline:none;
+    overflow: hidden;
+    position: 0px 0px 10px 10px;
+    color:var(--cor-secundaria);
+    font-size:0.9375rem;
+    padding: 17px 60px;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 50px;
+    font-family:var(--font-principal);
+    font-weight: 400;
+    transition: 1.2s all;
+    cursor: pointer;
+
+    
+}
+
+.apresentacao__redesocial__social:after 
+{
+    background-color:var(--cor-terciaria);
+    width: 280px;
+    text-align: center;
+    border-radius: 40px;
+    font-size:1.5rem;
+    padding:21.5px 0px;
+    text-decoration: none;
+    color:var(--cor-principal);
+    font-family:var(--font-principal);
+}
+
+.apresentacao__redesocial__social:hover
+{
+    background-color: var(--cor-hover);
+    transform: scale(1.1);
+    color: var(--cor-hover-2);
+    border-radius: 8px;
+
+}
+.apresentacao__imagem
+{
+    margin:20px;
+    width: 25%;
+    height: 25%;
+
+    
+}
+
+.apresentacao__imagem:hover
+{
+    transform: scale(1.2);
+    transition: 1s ;
+    padding: 1% 1%;
+    
+}
+.copy
+{
+    text-align: center;
+    background:var(--cor-terciaria);
+    color: var(--cor-principal);
+    padding: 10px;
+    font-family:var(--font-principal);
+    
+   
+}
+
+@media (min-width: 480px) and (max-width: 1200px )
+{
+    .cabecalho{
+        padding:5%;
+    }
+    
+    .cabecalho_inicial
+    {
+        justify-content: center;
+    }
+    
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+        
+    }
+
+    .apresentacao__conteudo
+    {
+        width:auto;
+        
+    }
+    
+}
